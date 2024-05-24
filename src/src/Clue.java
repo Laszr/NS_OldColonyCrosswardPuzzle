@@ -63,7 +63,8 @@ public class Clue
     // Intended to display all clues in the program.
     public static String displayAllClues()
     {
-        return "row: " + getRow() + "col: " + getCol() + "number: " + getNum() + "horizontal? " + getIsHorizontal() + "Answer: " + getAnswer() + "Clue: " + getClue();
+        return "row" + DELIMITER + " " + getRow() + "col" + DELIMITER + " " + getCol() + "number" + DELIMITER + " " + getNum() + "horizontal? " +
+                getIsHorizontal() + "Answer" + DELIMITER + " " + getAnswer() + "Clue" + DELIMITER + " " + getClue();
     }
 
     // Returns the number and the clue.
