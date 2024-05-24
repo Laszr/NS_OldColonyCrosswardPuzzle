@@ -15,6 +15,7 @@ public class Main {
 
     public static final File textFile = new File("TextFile.txt");
 
+    // Main function; initializes the area of the crossword and prints out the user's choice/crossword itself.
     public static void main(String[] args) throws IOException {
 
         boolean[][] puzzleArea = new boolean[row][col];
@@ -23,6 +24,7 @@ public class Main {
         System.out.println(crossword);
     }
 
+    // Gives the user their choices and is intended to give proper response.
     public static void userChoice() throws IOException {
         int switchCase;
         while (true) {

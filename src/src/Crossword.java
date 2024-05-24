@@ -7,6 +7,8 @@ public class Crossword
     public Square[][] crossword;
 
     public static final char ASTERISK = '*';
+
+    // Decides whether the program should print out an empty (complete) space or an asterisk.
     public Crossword(boolean[][] grid) 
     {
         crossword = new Square[grid.length][grid[0].length];
@@ -26,15 +28,16 @@ public class Crossword
         }
     }
 
+    //Prints out the content of the crossword.
     @Override
     public String toString()
     {
         String emptyString = "";
         for (Square[] squares : crossword)
         {
-            for (int j = 0; j < crossword[0].length; j++)
+            for (int index = 0; index < crossword[0].length; index++)
             {
-                emptyString.indent(squares[j].getSquareContent()).indent(Integer.parseInt("  \n"));
+                emptyString.indent(squares[index].getSquareContent()).indent(Integer.parseInt("  \n"));
             }
         }
         return emptyString.toString();

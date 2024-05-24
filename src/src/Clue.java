@@ -45,6 +45,8 @@ public class Clue
     { 
         return clue; 
     }
+
+    // Gives the user a different clue whether its horizontal or vertical.
     public static void chooseClue() {
         System.out.println("Horizontal or vertical? (type in h or v)");
         char horizontal = (char) Clue.userInput.nextByte();
@@ -58,10 +60,13 @@ public class Clue
         }
     }
 
+    // Intended to display all clues in the program.
     public static String displayAllClues()
     {
         return "row: " + getRow() + "col: " + getCol() + "number: " + getNum() + "horizontal? " + getIsHorizontal() + "Answer: " + getAnswer() + "Clue: " + getClue();
     }
+
+    // Returns the number and the clue.
     @Override
     public String toString() 
     {

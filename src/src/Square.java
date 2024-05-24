@@ -17,6 +17,8 @@ public class Square
     {
         this.squareContent = squareContent;
     }
+
+    // Returns characters of the square's content.
     @Override
     public String toString()
     {
